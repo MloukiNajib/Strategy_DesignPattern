@@ -1,6 +1,6 @@
-namespace AdventureGame.Models.Comportements
+namespace AdventureGame.Models.ArmeStrategy
 {
-    public class UtiliserArcEtFleches : IUtiliserArme
+    public class ArcEtFleches : IUtiliserArme
     {
         public void UtiliserArme()
         {

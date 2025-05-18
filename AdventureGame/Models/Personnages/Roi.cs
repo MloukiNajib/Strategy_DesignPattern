@@ -1,5 +1,5 @@
 using System;
-using AdventureGame.Models.Comportements;
+using AdventureGame.Models.ArmeStrategy;
 
 namespace AdventureGame.Models.Personnages
 {
