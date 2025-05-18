@@ -1,13 +1,13 @@
 using System;
 using AdventureGame.Models.Comportements;
 
-namespace AdventureGame.Models
+namespace AdventureGame.Models.Personnages
 {
-    public class Chevalier : Personnage
+    public class Reine : Personnage
     {
         public override void Combattre()
         {
-            Console.Write("Le chevalier attaque : ");
+            Console.Write("La reine attaque : ");
             arme?.UtiliserArme();
         }
     }

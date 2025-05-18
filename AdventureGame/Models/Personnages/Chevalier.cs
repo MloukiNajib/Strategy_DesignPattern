@@ -1,13 +1,13 @@
 using System;
 using AdventureGame.Models.Comportements;
 
-namespace AdventureGame.Models
+namespace AdventureGame.Models.Personnages
 {
-    public class Troll : Personnage
+    public class Chevalier : Personnage
     {
         public override void Combattre()
         {
-            Console.Write("Le troll attaque : ");
+            Console.Write("Le chevalier attaque : ");
             arme?.UtiliserArme();
         }
     }

@@ -1,7 +1,7 @@
 using System;
 using AdventureGame.Models.Comportements;
 
-namespace AdventureGame.Models
+namespace AdventureGame.Models.Personnages
 {
     public class Roi : Personnage
     {

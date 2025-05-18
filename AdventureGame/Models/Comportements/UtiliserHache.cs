@@ -1,6 +1,6 @@
 namespace AdventureGame.Models.Comportements
 {
-    public class ComportementHache : IComportementArme
+    public class UtiliserHache : IUtiliserArme
     {
         public void UtiliserArme()
         {
