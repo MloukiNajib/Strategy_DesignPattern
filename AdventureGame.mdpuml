@@ -1,0 +1,35 @@
+@startuml
+interface IUtiliserArme {
+    +UtiliserArme()
+}
+
+' class Poignard implements IUtiliserArme
+' class ArcEtFleches implements IUtiliserArme
+' class Hache implements IUtiliserArme
+
+interface IPersonnage {
+    +Combattre()
+    +ChangerArme(IUtiliserArme)
+}
+
+abstract class Personnage implements IPersonnage {
+    -arme: IUtiliserArme
+    +Combattre()
+    +ChangerArme(IUtiliserArme)
+}
+
+' class Chevalier extends Personnage
+' class Reine extends Personnage
+' class Roi extends Personnage
+' class Troll extends Personnage
+
+Personnage *-- IUtiliserArme : utilise
+Personnage <|-- Chevalier
+Personnage <|-- Reine
+Personnage <|-- Roi
+Personnage <|-- Troll
+IUtiliserArme <|.. Poignard
+IUtiliserArme <|.. ArcEtFleches
+IUtiliserArme <|.. Hache
+@enduml
+
