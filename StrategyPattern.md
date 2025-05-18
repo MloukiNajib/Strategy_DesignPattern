@@ -3,11 +3,12 @@
 Le Strategy Pattern est un pattern comportemental qui permet de définir une famille d'algorithmes, de les encapsuler dans des classes séparées et de les rendre interchangeables.
 
 📌 Problème résolu
-Vous avez plusieurs variantes d'un algorithme (ex : différents types de tris, méthodes de paiement, règles de calcul).
 
-Vous voulez éviter les if/else ou switch complexes pour choisir entre ces algorithmes.
-
-Vous souhaitez pouvoir changer l'algorithme à l'exécution.
+<ul>
+    <li> Vous avez plusieurs variantes d'un algorithme (ex : différents types de tris, méthodes de paiement, règles de calcul).           </li>
+    <li> Vous voulez <strong>éviter les <code>if/else</code> ou <code>switch</code></strong> complexes pour choisir entre ces algorithmes.</li>
+    <li> Vous souhaitez <strong>pouvoir changer l'algorithme à l'exécution</strong>.                                                      </li>
+</ul>
 
 🎯 Structure du Pattern
 
@@ -25,17 +26,8 @@ Vous souhaitez pouvoir changer l'algorithme à l'exécution.
 
 2. Diagramme simplifié
 
-┌───────────────────---┐       ┌───────────────────────┐
-│     Context          │       │      Strategy         │
-├───────────────────---┤       ├───────────────────────┤
-│ - strategy: Strategy │<>──--─│ + executeAlgorithm()  │
-└──────────────────---─┘       └───────────────────────┘
-                                          ^
-                         _________________|____________
-                        |                              |
-            ┌─────────────────────┐        ┌─────────────────────┐
-            │  ConcreteStrategyA  │        │  ConcreteStrategyB  │
-            └─────────────────────┘        └─────────────────────┘
+![image](https://github.com/user-attachments/assets/0017344a-7081-4a6a-b0ab-6cc716ef1173)
+
 
 
 
