@@ -1,26 +1,28 @@
+# Exemple AdventureGame
 
 
-# design pattern ?
-
-🌟 Un design pattern (ou patron de conception en français) est une solution générique et réutilisable à un problème récurrent de conception logicielle.
-
-🔍 Définition simple
-
-C’est comme un modèle de best practices que les développeurs utilisent pour résoudre des problèmes courants, sans réinventer la roue à chaque fois.
-
-📌 À quoi ça sert ?
-
-✅ Éviter les erreurs : solutions déjà testées et éprouvées.
-
-✅ Améliorer la maintenabilité : code plus clair et structuré.
-
-✅ Faciliter la communication : termes communs entre devs (ex: "On utilise un Singleton ici").
-
-🏗 3 Catégories de Design Patterns (GoF)
-
-<div class="markdown-table-wrapper"><table><thead><tr><th>Type</th><th>Exemple</th><th>Problème résolu</th></tr></thead><tbody><tr><td><strong>Créationnel</strong></td><td>Singleton, Factory</td><td>Comment créer des objets de manière optimale ?</td></tr><tr><td><strong>Structurel</strong></td><td>Adapter, Decorator</td><td>Comment composer des classes/objets ?</td></tr><tr><td><strong>Comportemental</strong></td><td>Observer, Strategy</td><td>Comment gérer les interactions entre objets ?</td></tr></tbody></table></div>
+![image](https://github.com/user-attachments/assets/d1ebb4bc-f65d-4359-8598-e09ae20c61d8)
 
 
+Explication de la Relation UML entre  (Personnage) <>───   (IUtiliserArme) 🎯
+
+## Context (Personnage) <>─── Strategy (IUtiliserArme) 
+
+Le diagramme UML montre une relation de dépendance (flèche en pointillés <>───) entre :
+
+- Context (Personnage) → La classe qui utilise une stratégie.
+- Strategy (IUtiliserArme) → L'interface définissant le contrat des algorithmes.
+
+
+🔍 Détail de la Relation
+
+- Type de Relation : Agrégation (ou Dépendance selon les cas)
+- Symbolisée par : <>─── (flèche en pointillés + losange vide en UML).
+
+Signification :
+
+- Context utilise une implémentation de Strategy, mais ne la possède pas (pas de gestion du cycle de vie).
+- Strategy peut être interchangée dynamiquement (ex: setStrategy()).
 
 
 # Strategy Pattern (Patron Stratégie) 🎯
@@ -73,30 +75,25 @@ Le Strategy Pattern est un pattern comportemental qui permet de définir une fam
 - Extensibilité : Ajouter une nouvelle stratégie ne modifie pas Context.
 
 
-# Exemple AdventureGame
 
+# design pattern ?
 
-![image](https://github.com/user-attachments/assets/d1ebb4bc-f65d-4359-8598-e09ae20c61d8)
+🌟 Un design pattern (ou patron de conception en français) est une solution générique et réutilisable à un problème récurrent de conception logicielle.
 
+🔍 Définition simple
 
-# Explication de la Relation UML entre Context (Personnage) et Strategy (IUtiliserArme) 🎯
+C’est comme un modèle de best practices que les développeurs utilisent pour résoudre des problèmes courants, sans réinventer la roue à chaque fois.
 
-## Context (Personnage) <>─── Strategy (IUtiliserArme) 
+📌 À quoi ça sert ?
 
-Le diagramme UML montre une relation de dépendance (flèche en pointillés <>───) entre :
+✅ Éviter les erreurs : solutions déjà testées et éprouvées.
 
-1. Context (Personnage) → La classe qui utilise une stratégie.
-2. Strategy (IUtiliserArme) → L'interface définissant le contrat des algorithmes.
+✅ Améliorer la maintenabilité : code plus clair et structuré.
 
+✅ Faciliter la communication : termes communs entre devs (ex: "On utilise un Singleton ici").
 
-🔍 Détail de la Relation
+🏗 3 Catégories de Design Patterns (GoF)
 
-1. Type de Relation : Agrégation (ou Dépendance selon les cas)
-2. Symbolisée par : <>─── (flèche en pointillés + losange vide en UML).
-
-Signification :
-
-1. Context utilise une implémentation de Strategy, mais ne la possède pas (pas de gestion du cycle de vie).
-2. Strategy peut être interchangée dynamiquement (ex: setStrategy()).
+<div class="markdown-table-wrapper"><table><thead><tr><th>Type</th><th>Exemple</th><th>Problème résolu</th></tr></thead><tbody><tr><td><strong>Créationnel</strong></td><td>Singleton, Factory</td><td>Comment créer des objets de manière optimale ?</td></tr><tr><td><strong>Structurel</strong></td><td>Adapter, Decorator</td><td>Comment composer des classes/objets ?</td></tr><tr><td><strong>Comportemental</strong></td><td>Observer, Strategy</td><td>Comment gérer les interactions entre objets ?</td></tr></tbody></table></div>
 
 
