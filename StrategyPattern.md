@@ -12,7 +12,7 @@ Le Strategy Pattern est un pattern comportemental qui permet de définir une fam
 
 🎯 Structure du Pattern
 
-1. Composants clés
+## 1. Composants clés
 
 <table>
     <thead><tr>         <th> Composant </th>                        <th> Rôle </th></tr></thead>
@@ -24,10 +24,26 @@ Le Strategy Pattern est un pattern comportemental qui permet de définir une fam
 </table>
 
 
-2. Diagramme simplifié
+## 2. Diagramme simplifié
 
 ![image](https://github.com/user-attachments/assets/0017344a-7081-4a6a-b0ab-6cc716ef1173)
 
+💡 En Résumé
+
+- Context délègue le comportement à Strategy.
+
+- La flèche <>─── montre que Context dépend de l'interface Strategy, pas des implémentations.
+
+📌 Différence avec d'autres Relations UML
+
+<table><thead><tr><th>Relation</th><th>Symbole</th><th>Exemple</th><th>Description</th></tr></thead><tbody><tr><td><strong>Agrégation</strong></td><td><code>&lt;&gt;───</code></td><td><code>Context</code> → <code>Strategy</code></td><td><code>Context</code> utilise <code>Strategy</code> (liens faibles).</td></tr><tr><td><strong>Composition</strong></td><td><code>◆───</code></td><td><code>Maison</code> → <code>Pièce</code></td><td><code>Pièce</code> ne peut exister sans <code>Maison</code>.</td></tr><tr><td><strong>Héritage</strong></td><td><code>▷────</code></td><td><code>Chien</code> → <code>Animal</code></td><td>Relation "est un".</td></tr></tbody></table>
 
 
+## 🎯 Pourquoi cette Relation ?
+
+- Découplage : Context ne dépend pas des implémentations concrètes (ConcreteStrategyA, B...).
+
+- Flexibilité : On peut changer de stratégie à l'exécution avec setStrategy().
+
+- Extensibilité : Ajouter une nouvelle stratégie ne modifie pas Context.
 
